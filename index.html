@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List📃</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- title -->
+        <h1 class="title-primary">Todo List</h1>              
+          
+        <!-- add todo -->
+        <section>
+          <label for="todo" class="input-label">Add New</label>
+          <input type="text" name="todo" id="todo" placeholder="type here...">
+          <button class="btn btn-add"><i class="fas fa-plus"></i></button>
+        </section>
+        
+        <!-- filter todos -->
+        <section>
+          <label for="filter" class="input-label">Filter</label>
+          <input type="text" name="filter" id="filter" placeholder="type here...">
+        </section>  
+        
+        <!-- active todos -->
+        <section>
+          <h2 class="title-secondary title-active">Active</h2>
+          <ul class="list list-active">
+            <li class="list-item">
+              <span class="left-side">
+                <button class="btn btn-check btn-check-active">
+                  <i class="fas fa-check fa-check-active"></i>
+                </button>
+                <span class="text">Walk the dog</span>
+                <textarea cols="25" rows="3" class="li-text-edit"></textarea>
+              </span>
+              <span class="right-side">
+                <button class="btn btn-edit">
+                  <i class="fas fa-pen"></i>
+                </button>
+                <button class="btn btn-remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span> 
+            </li>
+            
+            <li class="list-item">
+              <span class="left-side">
+                <button class="btn btn-check btn-check-active">
+                  <i class="fas fa-check fa-check-active"></i>
+                </button>
+                <span class="text">Buy bread</span>
+                <textarea cols="25" rows="3" class="li-text-edit"></textarea>
+              </span>
+              <span class="right-side">
+                <button class="btn btn-edit">
+                  <i class="fas fa-pen"></i>
+                </button>
+                <button class="btn btn-remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
+            </li>
+          </ul>
+        </section>
+      
+        <!-- completed todos -->
+        <section>
+          <h2 class="title-secondary title-completed">Completed</h2>
+          <ul class="list list-completed">
+            <li class="list-item">
+              <span class="left-side">
+                <button class="btn btn-check btn-check-completed">
+                  <i class="fas fa-check black-tick fa-check-completed"></i>
+                </button>
+                <span class="text strike-through">See the doctor</span>
+                <textarea cols="25" rows="3" class="li-text-edit"></textarea>
+              </span>
+              <span class="right-side">
+                <button class="btn btn-edit">
+                  <i class="fas fa-pen"></i>
+                </button>
+                <button class="btn btn-remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
+            </li>
+          </ul>
+        </section>
+      
+        <!-- clear all option -->
+        <button class="btn-clear">CLEAR ALL</button>
+        
+      </main>
+      
+      <!-- Warning messages -->
+      <div class="warning">
+        <span class="message">Type a todo first!</span>
+        <button class="btn btn-warning-remove">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      
+      
+      
+      
+<script src="script.js"></script>      
+    
+</body>
+</html>
